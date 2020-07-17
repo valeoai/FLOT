@@ -11,7 +11,7 @@
 If you find this code or work useful, please cite our [paper]():
 ```
 @inproceedings{puy20flot,
-  title={{FLOT}: {S}cene {F}low on {P}oint {C}louds {G}uided by {O}ptimal {T}ransport {T}ools},
+  title={{FLOT}: {S}cene {F}low on {P}oint {C}louds {G}uided by {O}ptimal {T}ransport},
   author={Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
   booktitle={European Conference on Computer Vision}
   year={2020}
