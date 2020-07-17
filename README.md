@@ -1,8 +1,8 @@
-# FLOT: Scene Flow on Point Clouds guided by Optimal Transport Tools
+# FLOT: Scene Flow on Point Clouds guided by Optimal Transport
 
 ![](./illustration.png)
 
-[**FLOT: Scene Flow on Point Clouds guided by Optimal Transport Tools**]()  
+[**FLOT: Scene Flow on Point Clouds guided by Optimal Transport**]()  
 [*Gilles Puy*<sup>1</sup>](https://sites.google.com/site/puygilles/home),
 [*Alexandre Boulch*<sup>1</sup>](http://boulch.eu),
 [*Renaud Marlet*<sup>1,2</sup>](http://imagine.enpc.fr/~marletr/)  
