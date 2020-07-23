@@ -2,13 +2,13 @@
 
 ![](./illustration.png)
 
-[**FLOT: Scene Flow on Point Clouds guided by Optimal Transport**]()  
+[**FLOT: Scene Flow on Point Clouds guided by Optimal Transport**](https://arxiv.org/abs/2007.11142)  
 [*Gilles Puy*<sup>1</sup>](https://sites.google.com/site/puygilles/home),
 [*Alexandre Boulch*<sup>1</sup>](http://boulch.eu),
 [*Renaud Marlet*<sup>1,2</sup>](http://imagine.enpc.fr/~marletr/)  
 <sup>1</sup>*valeo.ai, France and <sup>2</sup>ENPC, France*
 
-If you find this code or work useful, please cite our [paper]():
+If you find this code or work useful, please cite our [paper](https://arxiv.org/abs/2007.11142):
 ```
 @inproceedings{puy20flot,
   title={{FLOT}: {S}cene {F}low on {P}oint {C}louds {G}uided by {O}ptimal {T}ransport},
@@ -59,7 +59,7 @@ $ pip uninstall flot
 ### Datasets
 By default, the datasets are stored in ```/path/to/flot/data```. The datasets are prepared using FlyingThing3D and the KITTI scene flow dataset. There are two different ways to prepare the datasets.
 
-1. **FlowNet3d's version**: Please download the datasets available [here](https://github.com/xingyul/flownet3d) to obtain the FlyingThings3D and KITTI datasets used in this [paper](https://arxiv.org/abs/1806.01411). These datasets are denoted FT3D<sub>o</sub> and KITTI<sub>o</sub> in our [paper](). After downloading the datasets, move them in
+1. **FlowNet3d's version**: Please download the datasets available [here](https://github.com/xingyul/flownet3d) to obtain the FlyingThings3D and KITTI datasets used in this [paper](https://arxiv.org/abs/1806.01411). These datasets are denoted FT3D<sub>o</sub> and KITTI<sub>o</sub> in our [paper](https://arxiv.org/abs/2007.11142). After downloading the datasets, move them in
 ```bash
 /path/to/flot/data/flownet3d/
 ```
@@ -75,7 +75,7 @@ $ ln -s /path/to/dataset/on/your/sytem /path/to/flot/data/flownet3d/
 /path/to/flot/data/flownet3d/kitti_rm_ground                        % KITTI dataset
 ```
 
-2. **HPLFlowNet's version**: Please follow the instructions given [here](https://github.com/laoreja/HPLFlowNet) to construct the FlyingThings3D and KITTI datasets used in this [paper](https://arxiv.org/abs/1906.05332). These datasets are denoted FT3D<sub>s</sub> and KITTI<sub>s</sub> in our [paper](). After preparation, move the datasets in
+2. **HPLFlowNet's version**: Please follow the instructions given [here](https://github.com/laoreja/HPLFlowNet) to construct the FlyingThings3D and KITTI datasets used in this [paper](https://arxiv.org/abs/1906.05332). These datasets are denoted FT3D<sub>s</sub> and KITTI<sub>s</sub> in our [paper](https://arxiv.org/abs/2007.11142). After preparation, move the datasets in
 ```bash
 /path/to/flot/data/HPLFlowNet/
 ```
@@ -109,7 +109,7 @@ $ cd /path/to/flot/scripts/
 $ python val_test.py --help
 ```
  
-1. **FlowNet3d's datasets.** A model trained on FT3D<sub>o</sub> and 2048 points (Sec. 4.5 in our [paper]()) is available at ```/path/to/flot/pretrained_models/model_2048.tar```.
+1. **FlowNet3d's datasets.** A model trained on FT3D<sub>o</sub> and 2048 points (Sec. 4.5 in our [paper](https://arxiv.org/abs/2007.11142)) is available at ```/path/to/flot/pretrained_models/model_2048.tar```.
 
   To evaluate this pre-trained model on KITTI<sub>o</sub>, type:
 ```bash
@@ -123,7 +123,7 @@ $ cd /path/to/flot/scripts/
 $ python val_test.py --dataset flownet3D_ft3d --test --nb_points 2048 --path2ckpt ../pretrained_models/model_2048.tar
 ```
 
-2. **HPLFlowNet's datasets.** A model trained on FT3D<sub>s</sub> and 8192 points (Sec. 4.5 in our [paper]()) is available at ```/path/to/flot/pretrained_models/model_8192.tar```.
+2. **HPLFlowNet's datasets.** A model trained on FT3D<sub>s</sub> and 8192 points (Sec. 4.5 in our [paper](https://arxiv.org/abs/2007.11142)) is available at ```/path/to/flot/pretrained_models/model_8192.tar```.
 
   To evaluate this pretrained model on KITTI<sub>s</sub>, type:
 ```bash
@@ -144,14 +144,14 @@ $ cd /path/to/flot/scripts/
 $ python train.py --help
 ```
 
-1. **FlowNet3d's datasets.** To train FLOT on the FlowNet3D's version of FlyingThing3D on 2048 points as in Sec. 4.5 of our [paper](), type:
+1. **FlowNet3d's datasets.** To train FLOT on the FlowNet3D's version of FlyingThing3D on 2048 points as in Sec. 4.5 of our [paper](https://arxiv.org/abs/2007.11142), type:
 ```bash
 $ cd /path/to/flot/
 $ python train.py --nb_iter 1 --dataset flownet3d --nb_points 2048 --batch_size 4 --nb_epochs 400
 ```
 These 400 epochs on 2048 points takes about 4 days to complete on a GeForce RTX 2080 Ti.
 
-2. **HPLFlowNet's datasets.** To train FLOT on the HPLFlownet's version of FlyingThing3D on 8192 points as in Sec. 4.4 of our [paper](), type:
+2. **HPLFlowNet's datasets.** To train FLOT on the HPLFlownet's version of FlyingThing3D on 8192 points as in Sec. 4.4 of our [paper](https://arxiv.org/abs/2007.11142), type:
 ```bash
 $ cd /path/to/flot/
 $ python train.py --nb_iter 1 --dataset HPLFlowNet --nb_points 8192 --batch_size 1 --nb_epochs 60
