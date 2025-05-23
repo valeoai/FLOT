@@ -156,7 +156,7 @@ These 400 epochs on 2048 points takes about 4 days to complete on a GeForce RTX 
 $ cd /path/to/flot/
 $ python train.py --nb_iter 1 --dataset HPLFlowNet --nb_points 8192 --batch_size 1 --nb_epochs 60
 ```
-These 40 epochs on 8192 points takes about 6 days to complete on a GeForce RTX 2080 Ti.
+These 40 epochs on 8192 points take about 6 days to complete on a GeForce RTX 2080 Ti.
 
 
 ### Using your own dataset
